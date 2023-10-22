@@ -6,7 +6,7 @@ const ColorList = () => {
   )
 }
 
-export default ColorList\
+export default ColorList
 
 // Progress:
-// - ss7-224: Create ColorList component
+// - s7-224: Create ColorList component
