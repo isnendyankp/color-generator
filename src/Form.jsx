@@ -6,8 +6,14 @@ const Form = () => {
 
   };
   return (
-    <div>Form</div>
-  )
+   <section>
+    <h4>
+      <form action="">
+        <input type="text" />
+      </form>
+    </h4>
+   </section>
+  );
 }
 
 export default Form
@@ -16,3 +22,4 @@ export default Form
 // - ss7-224: Create Form component
 // - ss7-224: Create color state
 // - ss7-224: Create handleSubmit function for form
+// - ss7-224: Create form element
