@@ -8,8 +8,12 @@ const Form = () => {
   return (
     <section>
       <h4>color generator</h4>
-      <form >
-        <input type="text" value={color}/>
+      <form>
+        <input
+          type="color"
+          value={color}
+          onChange={(e) => setColor(e.target.value)}
+        />
       </form>
     </section>
   );
@@ -24,3 +28,4 @@ export default Form
 // - ss7-224: Create form element
 // - ss7-224: fix h4 tag
 // - ss7-224: add value with pass in color state @input form
+// - ss7-224: add onChange event @input form
