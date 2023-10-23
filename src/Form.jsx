@@ -8,7 +8,7 @@ const Form = () => {
   return (
     <section className='container'>
       <h4>color generator</h4>
-      <form className='color-form'>
+      <form className='color-form' onSubmit={handleSubmit}>
         <input
           type="color"
           value={color}
@@ -33,3 +33,4 @@ export default Form
 // - ss7-224: add placeholder @input form
 // - ss7-224: add className container @section
 // - ss7-224: add className color-form @form
+// - ss7-224: add onSubmit event with pass in handleSubmit @form
