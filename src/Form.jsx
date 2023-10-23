@@ -8,8 +8,8 @@ const Form = () => {
   return (
     <section>
       <h4>color generator</h4>
-      <form action="">
-        <input type="text" />
+      <form >
+        <input type="text" value={color}/>
       </form>
     </section>
   );
@@ -23,3 +23,4 @@ export default Form
 // - ss7-224: Create handleSubmit function for form
 // - ss7-224: Create form element
 // - ss7-224: fix h4 tag
+// - ss7-224: add value with pass in color state @input form
