@@ -6,13 +6,12 @@ const Form = () => {
 
   };
   return (
-   <section>
-    <h4>
+    <section>
+      <h4>color generator</h4>
       <form action="">
         <input type="text" />
       </form>
-    </h4>
-   </section>
+    </section>
   );
 }
 
@@ -23,3 +22,4 @@ export default Form
 // - ss7-224: Create color state
 // - ss7-224: Create handleSubmit function for form
 // - ss7-224: Create form element
+// - ss7-224: fix h4 tag
