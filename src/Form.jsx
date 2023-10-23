@@ -6,7 +6,7 @@ const Form = () => {
 
   };
   return (
-    <section>
+    <section className='container'>
       <h4>color generator</h4>
       <form>
         <input
@@ -31,3 +31,4 @@ export default Form
 // - ss7-224: add value with pass in color state @input form
 // - ss7-224: add onChange event @input form
 // - ss7-224: add placeholder @input form
+// - ss7-224: add className container @section
