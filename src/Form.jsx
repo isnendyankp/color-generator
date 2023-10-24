@@ -15,6 +15,11 @@ const Form = () => {
           onChange={(e) => setColor(e.target.value)}
           placeholder="#f15025"
         />
+        <button 
+        className='btn' 
+        type='submit'
+        style={{ background: color }}
+        ></button>
       </form>
     </section>
   );
@@ -34,3 +39,4 @@ export default Form
 // - s7-224: add className container @section
 // - s7-224: add className color-form @form
 // - s7-224: add onSubmit event with pass in handleSubmit @form
+// - s7-224: create button element @form
