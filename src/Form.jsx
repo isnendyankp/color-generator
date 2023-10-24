@@ -23,14 +23,14 @@ const Form = () => {
 export default Form
 
 // Progress:
-// - ss7-224: Create Form component
-// - ss7-224: Create color state
-// - ss7-224: Create handleSubmit function for form
-// - ss7-224: Create form element
-// - ss7-224: fix h4 tag
-// - ss7-224: add value with pass in color state @input form
-// - ss7-224: add onChange event @input form
-// - ss7-224: add placeholder @input form
-// - ss7-224: add className container @section
-// - ss7-224: add className color-form @form
-// - ss7-224: add onSubmit event with pass in handleSubmit @form
+// - s7-224: Create Form component
+// - s7-224: Create color state
+// - s7-224: Create handleSubmit function for form
+// - s7-224: Create form element
+// - s7-224: fix h4 tag
+// - s7-224: add value with pass in color state @input form
+// - s7-224: add onChange event @input form
+// - s7-224: add placeholder @input form
+// - s7-224: add className container @section
+// - s7-224: add className color-form @form
+// - s7-224: add onSubmit event with pass in handleSubmit @form
