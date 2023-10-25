@@ -3,6 +3,7 @@ import Form from './Form';
 import Values from 'values.js';
 
 const App = () => {
+  const [color, setColor] = useState('');
   return (
     <main>
       <Form />
@@ -17,3 +18,4 @@ export default App;
 // - s7-226:import ColorList component
 // - s7-226:import Form component
 // - s7-226:import Values from values.js
+// - s7-226:Create color state
