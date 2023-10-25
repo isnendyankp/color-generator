@@ -4,7 +4,7 @@ import Values from 'values.js';
 import { useState } from 'react';
 
 const App = () => {
-  const [color, setColor] = useState('');
+  const [colors, setColors] = useState(new Values('#f15025').all(10));
   return (
     <main>
       <Form />
@@ -21,3 +21,4 @@ export default App;
 // - s7-226:import Values from values.js
 // - s7-226:Create color state
 // - s7-226:import useState from react
+// - s7-226:pass in new Values as default value @color state
