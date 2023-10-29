@@ -5,7 +5,7 @@ const ColorList = ({ colors }) => {
   return (
     <section className='colors'>
       {colors.map((colors) => {
-        return <SingleColor />
+        return <SingleColor colors={colors}/>
       })}
     </section>
   );
@@ -21,3 +21,4 @@ export default ColorList
 // - s7-227: return colors state
 // - s7-227: import SingleColor component
 // - s7-227: return SingleColor component
+// - s7-227: pass in colors prop
