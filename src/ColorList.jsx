@@ -1,5 +1,6 @@
 import React from 'react'
 import SingleColor from './SingleColor'
+import { nanoid } from 'nanoid';
 
 const ColorList = ({ colors }) => {
   return (
@@ -24,3 +25,4 @@ export default ColorList
 // - s7-227: pass in colors prop
 // - s7-227: add second parameter(index) to map function
 // - s7-227: pass in index prop
+// - s7-227: import nanoid
