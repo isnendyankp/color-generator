@@ -7,7 +7,7 @@ const SingleColor = ({ index, color }) => {
     className='color'
     style={{ backgroundColor: `${hex}` }}
     >
-      SingleColor
+      <p className='percent-value'>{weight}%</p>
     </article>
   )
 }
@@ -22,3 +22,4 @@ export default SingleColor
 // - s7-227: Create article element with text SingleColor
 // - s7-227: add className color to article element
 // - s7-227: add inline style with backgroundColor property to article element
+// - s7-227: add className percent-value to new p element
