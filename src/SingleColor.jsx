@@ -3,14 +3,14 @@ import React from 'react'
 const SingleColor = ({ index, color }) => {
   const { hex, weight } = color
   return (
-    <article 
-    className='color'
-    style={{ backgroundColor: `${hex}` }}
+    <article
+      className={index > 10 ? 'color color-light' : 'color'}
+      style={{ backgroundColor: `${hex}` }}
     >
-      <p className='percent-value'>{weight}%</p>
-      <p className='color-value'>{hex}</p>
+      <p className="percent-value">{weight}%</p>
+      <p className="color-value">{hex}</p>
     </article>
-  )
+  );
 }
 
 export default SingleColor
@@ -25,4 +25,5 @@ export default SingleColor
 // - s7-227: add inline style with backgroundColor property to article element
 // - s7-227: add className percent-value to new p element
 // - s7-227: add className color-value to new p element
+// - s7-227: add index condition to className color
 
