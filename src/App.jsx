@@ -2,7 +2,7 @@ import ColorList from './ColorList';
 import Form from './Form';
 import Values from 'values.js';
 import { useState } from 'react';
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
   const [colors, setColors] = useState(new Values('#f15025').all(10));
@@ -27,3 +27,4 @@ export default App;
 // - s7-227:pass in colors state to ColorList component
 // - s7-228:import ToastContainer from react-toastify
 // - s7-228:pass in ToastContainer component
+// - s7-228:import toast from react-toastify
