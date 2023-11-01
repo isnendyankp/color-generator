@@ -10,6 +10,7 @@ const App = () => {
     <main>
       <Form />
       <ColorList colors={colors} />
+      <ToastContainer />
     </main>
   );
 };
@@ -25,3 +26,4 @@ export default App;
 // - s7-226:pass in new Values as default value @color state
 // - s7-227:pass in colors state to ColorList component
 // - s7-228:import ToastContainer from react-toastify
+// - s7-228:pass in ToastContainer component
