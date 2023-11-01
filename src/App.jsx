@@ -12,7 +12,7 @@ const App = () => {
     <main>
       <Form />
       <ColorList colors={colors} />
-      <ToastContainer />
+      <ToastContainer position='top-center'/>
     </main>
   );
 };
@@ -32,3 +32,4 @@ export default App;
 // - s7-228:import toast from react-toastify
 // - s7-228:check toast.error with message
 // - s7-228:check toast.success with message
+// - s7-228:add top-center position to ToastContainer
