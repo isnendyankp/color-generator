@@ -8,7 +8,11 @@ const App = () => {
   const [colors, setColors] = useState(new Values('#f15025').all(10));
   
   const addColor = (color) => {
-    console.log(color)
+    try {
+
+    } catch (error) {
+
+    }
   };
 
   return (
@@ -39,3 +43,4 @@ export default App;
 // - s7-228:defind addColor function
 // - s7-228:pass in addColor function to Form component
 // - s7-228:check log color @addColor function
+// - s7-228:add try catch block @addColor function
