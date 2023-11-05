@@ -4,7 +4,7 @@ const Form = (addColor) => {
   const [color, setColor] = useState('')
   const handleSubmit = (e) => {
     e.preventDefault()
-    
+    addColor(color)
   };
   return (
     <section className="container">
@@ -46,3 +46,4 @@ export default Form
 // - s7-224: create button element @form
 // - s7-224: pass in addColor function to Form component
 // - s7-224: add preventDefault to handleSubmit function
+// - s7-224: pass in addcolor(color) to handleSubmit function
