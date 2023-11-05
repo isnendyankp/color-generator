@@ -6,8 +6,11 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
   const [colors, setColors] = useState(new Values('#f15025').all(10));
-  toast.error('This is an error message');
-  toast.success('This is a success message');
+  
+  const addColor = (newColor) => {
+
+  };
+
   return (
     <main>
       <Form />
@@ -33,3 +36,4 @@ export default App;
 // - s7-228:check toast.error with message
 // - s7-228:check toast.success with message
 // - s7-228:add top-center position to ToastContainer
+// - s7-228:defind addColor function
