@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <main>
-      <Form />
+      <Form addColor={addColor}/>
       <ColorList colors={colors} />
       <ToastContainer position='top-center'/>
     </main>
@@ -37,3 +37,4 @@ export default App;
 // - s7-228:check toast.success with message
 // - s7-228:add top-center position to ToastContainer
 // - s7-228:defind addColor function
+// - s7-228:pass in addColor function to Form component
