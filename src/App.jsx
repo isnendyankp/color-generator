@@ -9,7 +9,8 @@ const App = () => {
   
   const addColor = (color) => {
     try {
-
+      const newColor = new Values(color).all(10);
+      
     } catch (error) {
 
     }
@@ -44,3 +45,5 @@ export default App;
 // - s7-228:pass in addColor function to Form component
 // - s7-228:check log color @addColor function
 // - s7-228:add try catch block @addColor function
+// - s7-229: define newColor variable @addColor function
+
