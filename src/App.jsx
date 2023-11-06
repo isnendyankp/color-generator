@@ -12,7 +12,7 @@ const App = () => {
       const newColor = new Values(color).all(10);
       setColors(newColor);
     } catch (error) {
-      console.log(error);
+      toast.error(error.message);
     }
   };
 
@@ -48,4 +48,5 @@ export default App;
 // - s7-229: define newColor variable @addColor function
 // - s7-229: pass in newColor to setColors @addColor function
 // - s7-229:check log error in catch block @addColor function
+// - s7-229:check toast.error with message @addColor function
 
