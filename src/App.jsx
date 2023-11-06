@@ -10,9 +10,9 @@ const App = () => {
   const addColor = (color) => {
     try {
       const newColor = new Values(color).all(10);
-      SetColors(newColor);
+      setColors(newColor);
     } catch (error) {
-
+      
     }
   };
 
