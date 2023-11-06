@@ -10,7 +10,7 @@ const App = () => {
   const addColor = (color) => {
     try {
       const newColor = new Values(color).all(10);
-      
+      SetColors(newColor);
     } catch (error) {
 
     }
@@ -46,4 +46,5 @@ export default App;
 // - s7-228:check log color @addColor function
 // - s7-228:add try catch block @addColor function
 // - s7-229: define newColor variable @addColor function
+// - s7-229: pass in newColor to setColors @addColor function
 
