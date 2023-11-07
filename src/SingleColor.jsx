@@ -6,7 +6,7 @@ const SingleColor = ({ index, color }) => {
   const saveToClipboard = async () => {
     if (navigator.clipboard) {
       try {
-        navigator.clipboard.writeText();
+        await navigator.clipboard.writeText(`#${hex}`);
       } catch (error) {
         
       }
@@ -46,3 +46,4 @@ export default SingleColor
 // - s7-227: check toast.error with message @else statement
 // - s7-227: add try with navigator.clipboard.writeText @if statement
 // - s7-227: add base catch block @if statement
+// - s7-227: fix code async await @if > try block
