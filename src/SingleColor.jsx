@@ -5,6 +5,8 @@ const SingleColor = ({ index, color }) => {
   const saveToClipboard = async () => {
     if (navigator.clipboard) {
       
+    } else {
+      
     }
   }
   return (
@@ -35,3 +37,4 @@ export default SingleColor
 // - s7-227: add onClick event with pass in saveToClipboard function
 // - s7-227: define saveToClipboard function with base async
 // - s7-227: check navigator.clipboard with if statement
+// - s7-227: add base else statement
