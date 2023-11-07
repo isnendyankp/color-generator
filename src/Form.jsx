@@ -1,10 +1,10 @@
-import React from 'react'
+import { useState } from 'react';
 
-const Form = (addColor) => {
-  const [color, setColor] = useState('')
+const Form = ({ addColor }) => {
+  const [color, setColor] = useState('');
   const handleSubmit = (e) => {
-    e.preventDefault()
-    addColor(color)
+    e.preventDefault();
+    addColor(color);
   };
   return (
     <section className="container">
@@ -16,7 +16,7 @@ const Form = (addColor) => {
           onChange={(e) => setColor(e.target.value)}
         />
         <input
-          type="color"
+          type="text"
           value={color}
           onChange={(e) => setColor(e.target.value)}
           placeholder="#f15025"
@@ -27,9 +27,8 @@ const Form = (addColor) => {
       </form>
     </section>
   );
-}
-
-export default Form
+};
+export default Form;
 
 // Progress:
 // - s7-224: Create Form component
