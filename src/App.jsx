@@ -3,14 +3,13 @@ import Form from './Form';
 import Values from 'values.js';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-
 const App = () => {
   const [colors, setColors] = useState(new Values('#f15025').all(10));
-  
+
   const addColor = (color) => {
     try {
-      const newColor = new Values(color).all(10);
-      setColors(newColor);
+      const newColors = new Values(color).all(10);
+      setColors(newColors);
     } catch (error) {
       toast.error(error.message);
     }
@@ -18,9 +17,9 @@ const App = () => {
 
   return (
     <main>
-      <Form addColor={addColor}/>
+      <Form addColor={addColor} />
       <ColorList colors={colors} />
-      <ToastContainer position='top-center'/>
+      <ToastContainer position="top-center" />
     </main>
   );
 };
@@ -49,4 +48,3 @@ export default App;
 // - s7-229: pass in newColor to setColors @addColor function
 // - s7-229:check log error in catch block @addColor function
 // - s7-229:check toast.error with message @addColor function
-
