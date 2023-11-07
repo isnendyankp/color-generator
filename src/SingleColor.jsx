@@ -9,7 +9,7 @@ const SingleColor = ({ index, color }) => {
         await navigator.clipboard.writeText(`#${hex}`);
         toast.success('Color copied to clipboard');
       } catch (error) {
-        
+        toast.error('Failed to copy color to clipboard');
       }
     } else {
       toast.error('Clipboard access not available');
@@ -49,3 +49,4 @@ export default SingleColor
 // - s7-227: add base catch block @if statement
 // - s7-227: fix code async await @if > try block
 // - s7-227: check toast.success with message @if > try block
+// - s7-227: check toast.error with message @if > catch block
