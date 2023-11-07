@@ -1,8 +1,7 @@
-import React from 'react'
-import { toast } from 'react-toastify'
+import { toast } from 'react-toastify';
 
 const SingleColor = ({ index, color }) => {
-  const { hex, weight } = color
+  const { hex, weight } = color;
   const saveToClipboard = async () => {
     if (navigator.clipboard) {
       try {
@@ -14,20 +13,19 @@ const SingleColor = ({ index, color }) => {
     } else {
       toast.error('Clipboard access not available');
     }
-  }
+  };
   return (
     <article
       className={index > 10 ? 'color color-light' : 'color'}
-      style={{ backgroundColor: `${hex}` }}
+      style={{ background: `#${hex}` }}
       onClick={saveToClipboard}
     >
       <p className="percent-value">{weight}%</p>
-      <p className="color-value">{hex}</p>
+      <p className="color-value">#{hex}</p>
     </article>
   );
-}
-
-export default SingleColor
+};
+export default SingleColor;
 
 // progress:
 // - s7-224: Create SingleColor component
