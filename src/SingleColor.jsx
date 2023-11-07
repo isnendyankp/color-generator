@@ -3,7 +3,9 @@ import React from 'react'
 const SingleColor = ({ index, color }) => {
   const { hex, weight } = color
   const saveToClipboard = async () => {
-
+    if (navigator.clipboard) {
+      
+    }
   }
   return (
     <article
@@ -32,3 +34,4 @@ export default SingleColor
 // - s7-227: add index condition to className color
 // - s7-227: add onClick event with pass in saveToClipboard function
 // - s7-227: define saveToClipboard function with base async
+// - s7-227: check navigator.clipboard with if statement
