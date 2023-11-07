@@ -2,6 +2,9 @@ import React from 'react'
 
 const SingleColor = ({ index, color }) => {
   const { hex, weight } = color
+  const saveToClipboard = async () => {
+
+  }
   return (
     <article
       className={index > 10 ? 'color color-light' : 'color'}
@@ -28,3 +31,4 @@ export default SingleColor
 // - s7-227: add className color-value to new p element
 // - s7-227: add index condition to className color
 // - s7-227: add onClick event with pass in saveToClipboard function
+// - s7-227: define saveToClipboard function with base async
