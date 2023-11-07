@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast } from 'react-toastify'
 
 const SingleColor = ({ index, color }) => {
   const { hex, weight } = color
@@ -6,7 +7,7 @@ const SingleColor = ({ index, color }) => {
     if (navigator.clipboard) {
       
     } else {
-      
+      toast.error('Clipboard access not available');
     }
   }
   return (
@@ -38,3 +39,4 @@ export default SingleColor
 // - s7-227: define saveToClipboard function with base async
 // - s7-227: check navigator.clipboard with if statement
 // - s7-227: add base else statement
+// - s7-227: check toast.error with message @else statement
