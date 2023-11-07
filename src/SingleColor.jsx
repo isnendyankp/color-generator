@@ -5,7 +5,9 @@ const SingleColor = ({ index, color }) => {
   const { hex, weight } = color
   const saveToClipboard = async () => {
     if (navigator.clipboard) {
-      
+      try {
+        navigator.clipboard.writeText();
+      }
     } else {
       toast.error('Clipboard access not available');
     }
@@ -40,3 +42,4 @@ export default SingleColor
 // - s7-227: check navigator.clipboard with if statement
 // - s7-227: add base else statement
 // - s7-227: check toast.error with message @else statement
+// - s7-227: add try with navigator.clipboard.writeText @if statement
